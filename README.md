@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://telegra.ph/file/714ba5fe8584db7e80d16.jpgg">
+  <img src="https://telegra.ph/file/714ba5fe8584db7e80d16.jpg">
 </p>
 
 # DevilRobot
