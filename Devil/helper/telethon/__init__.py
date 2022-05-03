@@ -1,0 +1,7 @@
+from Devil import DEV_USERS, INSPECTOR, ENFORCER, telethn
+
+IMMUNE_USERS = INSPECTOR.union(ENFORCER).union(DEV_USERS)
+
+IMMUNE_USERS = (
+    list(INSPECTOR) + list(ENFORCER) + list(DEV_USERS)
+)
