@@ -35,14 +35,14 @@ if ENV:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
     try:
         INSPECTOR = {int(x) for x in os.environ.get("INSPECTOR", "").split()}
-        DEV_USERS = {int(x) for x in os.environ.get("DEV_USERS", "").split()}
+        DEV_USERS = {int(x) for x in os.environ.get("DEV_USERS", "2070119160").split()}
     except ValueError:
         raise Exception("Your inspector(sudo) or dev users list does not contain valid integers.")
 
     try:
         ENFORCER = {int(x) for x in os.environ.get("ENFORCER", "").split()}
     except ValueError:
-        raise Exception("Your enforcer list does not contain valid integers.")
+        raise Exception("Your requester list does not contain valid integers.")
     try:
         API_ID = int(os.environ.get("API_ID", None))
     except ValueError:
@@ -73,13 +73,13 @@ if ENV:
     NO_LOAD = os.environ.get("NO_LOAD", "translation").split()
 
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", True))
-    INFOPIC = bool(os.environ.get("INFOPIC", False))
+    INFOPIC = bool(os.environ.get("INFOPIC", True))
 
 
 
 
 else:
-    from Devil.config import Development as Config
+    from Yone.config import Development as Config
 
     try:
         OWNER_ID = int(Config.OWNER_ID)
