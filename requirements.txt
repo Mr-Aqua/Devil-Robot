@@ -1,6 +1,7 @@
 ﻿cachetools==4.2.2
 python-telegram-bot==13.11
 Telethon==1.24.0
+python-arq==6.0.3
 pyrate-limiter
 sqlalchemy==1.4.11
 git+https://github.com/starry69/python-markdown2.git
@@ -26,3 +27,4 @@ telegraph
 wikipedia
 opencv-python--headless
 gtts
+aiohttp
