@@ -2,7 +2,7 @@ import logging, os, sys, time
 import telegram.ext as tg
 from telethon.sessions import MemorySession
 from telethon import TelegramClient
-
+from Python_ARQ import ARQ
 
 StartTime = time.time()
 
@@ -73,7 +73,7 @@ if ENV:
     NO_LOAD = os.environ.get("NO_LOAD", "translation").split()
 
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", True))
-    INFOPIC = bool(os.environ.get("INFOPIC", False))
+    INFOPIC = bool(os.environ.get("INFOPIC", True))
 
 
 
