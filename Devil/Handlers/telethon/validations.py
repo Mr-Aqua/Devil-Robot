@@ -1,4 +1,4 @@
-from Devil.Functions.telethon import IMMUNE_USERS, telethn
+from Devil.Handlers.telethon import IMMUNE_USERS, telethn
 from Devil import ENFORCER
 from telethon.tl.types import ChannelParticipantsAdmins
 
