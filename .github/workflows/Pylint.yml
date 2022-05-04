@@ -27,7 +27,7 @@ jobs:
       # commit changes
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'pylint: auto fixes'
+          commit_message: 'Automated code formatting.'
           commit_options: '--no-verify'
           repository: .
           commit_user_name: Luvly-King
