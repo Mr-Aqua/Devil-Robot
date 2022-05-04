@@ -43,17 +43,11 @@ get_settings,
 settings_button, 
 migrate_chats, 
 send_help, 
-send_admin_help,
-send_user_help,
-user_help_button,
 send_settings,
-admin_help_button,
 HELP_STRINGS,
 IMPORTED,
 IMPORTED,
-HELPABLE,
-ADMIN,
-USER)
+HELPABLE,)
 
 
 def get_readable_time(seconds: int) -> str:
@@ -112,20 +106,7 @@ def start(update: Update, context: CallbackContext):
                         [[InlineKeyboardButton(text="⬅️ BACK", callback_data="help_back")]]
                     ),
                 )
-                send_admin_help(
-                    update.effective_chat.id,
-                    ADMIN[mod].__help__,
-                    InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="admin_back")]]
-                    ),
-                )
-                send_user_help(
-                    update.effective_chat.id,
-                    USER[mod].__help__,
-                    InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="user_back")]]
-                    ),
-                )
+                
                 
 
             elif args[0].lower().startswith("stngs_"):
@@ -148,12 +129,6 @@ def start(update: Update, context: CallbackContext):
     [
         InlineKeyboardButton(
             text="➕️ Add me to your chat ➕️", url=f"https://t.me/{context.bot.username}?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(text="Admin", callback_data="admin_back"),
-        InlineKeyboardButton(
-            text="Users", callback_data="user_back"
-        ),
     ],
     [
         
@@ -240,12 +215,6 @@ def Devil_about_callback(update: Update, context: CallbackContext):
     [
         InlineKeyboardButton(
             text="➕️ Add me to your chat ➕️", url=f"https://t.me/{context.bot.username}?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(text="Admin", callback_data="admin_back"),
-        InlineKeyboardButton(
-            text="Users", callback_data="user_back"
-        ),
     ],
     [
         
