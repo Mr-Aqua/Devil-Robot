@@ -13,7 +13,7 @@ from Devil.__help__ import (
     USER_INFO,
     USER_SETTINGS
 )
-from Devil.helper.validation import dev_plus, sudo_plus
+from Devil.Handlers.validation import dev_plus, sudo_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 

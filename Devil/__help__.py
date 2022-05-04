@@ -1,11 +1,11 @@
 import importlib, re
 from Devil import dispatcher, ALLOW_EXCL, LOGGER
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-from Devil.helper.misc import paginate_modules
+from Devil.Handlers.misc import paginate_modules
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext
 from telegram.utils.helpers import escape_markdown
-from Devil.helper.validation import is_user_admin
+from Devil.Handlers.validation import is_user_admin
 from telegram.ext.dispatcher import DispatcherHandlerStop
 from os.path import isfile
 

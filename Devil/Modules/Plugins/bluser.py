@@ -8,8 +8,8 @@ from Devil import (
     ENFORCER,
     dispatcher,
 )
-from Devil.helper.validation import dev_plus
-from Devil.helper.extraction import (
+from Devil.Handlers.validation import dev_plus
+from Devil.Handlers.extraction import (
     extract_user,
     extract_user_and_text,
 )

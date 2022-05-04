@@ -3,7 +3,7 @@ from typing import Optional
 
 
 from Devil import INSPECTOR, LOGGER, ENFORCER, dispatcher
-from Devil.helper.validation import user_admin, user_not_admin, is_user_admin
+from Devil.Handlers.validation import user_admin, user_not_admin, is_user_admin
 from Devil.Modules.Plugins.log_channel import loggable
 from Devil.Database import reporting_sql as sql
 from telegram import Chat, CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update, User

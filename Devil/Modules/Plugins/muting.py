@@ -2,18 +2,18 @@ import html
 from typing import Optional
 
 from Devil import LOGGER, ENFORCER, dispatcher
-from Devil.helper.validation import (
+from Devil.Handlers.validation import (
     bot_admin,
     can_restrict,
     connection_status,
     is_user_admin,
     user_admin,
 )
-from Devil.helper.extraction import (
+from Devil.Handlers.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Devil.helper.string_handling import extract_time
+from Devil.Handlers.string_handling import extract_time
 from Devil.Modules.Plugins.log_channel import loggable
 from telegram import Bot, Chat, ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest

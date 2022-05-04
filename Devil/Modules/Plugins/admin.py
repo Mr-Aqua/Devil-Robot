@@ -7,7 +7,7 @@ from telegram.utils.helpers import mention_html
 
 from Devil import INSPECTOR, dispatcher
 from Devil.Modules.disable import DisableAbleCommandHandler
-from Devil.helper.validation import (
+from Devil.Handlers.validation import (
     bot_admin,
     can_pin,
     can_promote,
@@ -17,12 +17,12 @@ from Devil.helper.validation import (
     ADMIN_CACHE,
 )
 
-from Devil.helper.extraction import (
+from Devil.Handlers.extraction import (
     extract_user,
     extract_user_and_text,
 )
 from Devil.Modules.Admin.log_channel import loggable
-from Devil.helper.alternate import send_message, typing_action
+from Devil.Handlers.alternate import send_message, typing_action
 
 
 

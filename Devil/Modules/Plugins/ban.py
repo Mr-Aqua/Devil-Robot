@@ -26,7 +26,7 @@ from Devil import (
     dispatcher,
 )
 from Devil.Modules.disable import DisableAbleCommandHandler
-from Devil.helper.validation import (
+from Devil.Handlers.validation import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -38,8 +38,8 @@ from Devil.helper.validation import (
     user_admin_no_reply,
     can_delete,
 )
-from Devil.helper.extraction import extract_user_and_text
-from Devil.helper.string_handling import extract_time
+from Devil.Handlers.extraction import extract_user_and_text
+from Devil.Handlers.string_handling import extract_time
 from Devil.Modules.Plugins.log_channel import gloggable, loggable
 
 

@@ -12,15 +12,15 @@ from Devil import (
     ENFORCER, DEV_USERS, INSPECTOR, JOIN_LOGGER, LOGGER,
     OWNER_ID, dispatcher
 )
-from Devil.helper.validation import (
+from Devil.Handlers.validation import (
     is_user_ban_protected, user_admin, connection_status,
 )
-from Devil.helper.misc import (
+from Devil.Handlers.misc import (
     build_keyboard,
     revert_buttons,
 )
-from Devil.helper.msg_types import get_welcome_type
-from Devil.helper.string_handling import (
+from Devil.Handlers.msg_types import get_welcome_type
+from Devil.Handlers.string_handling import (
     escape_invalid_curly_brackets, markdown_parser,
 )
 from Devil.Modules.Plugins.log_channel import loggable

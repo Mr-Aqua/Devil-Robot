@@ -1,7 +1,7 @@
 import speedtest
 from Devil import DEV_USERS, dispatcher
 from Devil.Modules.disable import DisableAbleCommandHandler
-from Devil.helper.validation import dev_plus
+from Devil.Handlers.validation import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 

@@ -4,7 +4,7 @@ from sqlalchemy import Column, String, UnicodeText, Boolean, distinct, func
 from sqlalchemy.sql.sqltypes import BigInteger
 
 
-from Devil.helper.msg_types import Types
+from Devil.Handlers.msg_types import Types
 from Devil.Database import BASE, SESSION
 
 

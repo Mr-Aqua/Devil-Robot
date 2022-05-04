@@ -3,8 +3,8 @@ from typing import Union
 
 from future.utils import string_types
 from Devil import dispatcher
-from Devil.helper.managers import CMD_STARTERS, SpamChecker
-from Devil.helper.misc import is_module_loaded
+from Devil.Handlers.managers import CMD_STARTERS, SpamChecker
+from Devil.Handlers.misc import is_module_loaded
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
@@ -20,7 +20,7 @@ FILENAME = __name__.rsplit(".", 1)[-1]
 # If module is due to be loaded, then setup all the magical handlers
 if is_module_loaded(FILENAME):
 
-    from Devil.helper.validation import (
+    from Devil.Handlers.validation import (
         connection_status,
         is_user_admin,
         user_admin,

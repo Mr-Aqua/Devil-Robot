@@ -17,13 +17,13 @@ from telegram.utils.helpers import mention_html, escape_markdown
 
 from Devil import dispatcher, LOGGER, INSPECTOR
 from Devil.Modules.disable import DisableAbleCommandHandler
-from Devil.helper.managers import MessageHandlerChecker
-from Devil.helper.validation import user_admin
-from Devil.helper.extraction import extract_text
-from Devil.helper.filters import CustomFilters
-from Devil.helper.misc import build_keyboard_parser
-from Devil.helper.msg_types import get_filter_type
-from Devil.helper.string_handling import (
+from Devil.Handlers.managers import MessageHandlerChecker
+from Devil.Handlers.validation import user_admin
+from Devil.Handlers.extraction import extract_text
+from Devil.Handlers.filters import CustomFilters
+from Devil.Handlers.misc import build_keyboard_parser
+from Devil.Handlers.msg_types import get_filter_type
+from Devil.Handlers.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
@@ -33,7 +33,7 @@ from Devil.Database import cust_filters_sql as sql
 
 from Devil.Modules.Plugins.connection import connected
 
-from Devil.helper.alternate import send_message, typing_action
+from Devil.Handlers.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 

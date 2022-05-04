@@ -7,8 +7,8 @@ from telegram.ext import CommandHandler, CallbackQueryHandler, run_async
 
 import Devil.Database.connection_sql as sql
 from Devil import dispatcher, INSPECTOR, DEV_USERS
-from Devil.helper import validation
-from Devil.helper.alternate import send_message, typing_action
+from Devil.Handlers import validation
+from Devil.Handlers.alternate import send_message, typing_action
 
 user_admin = validation.user_admin
 

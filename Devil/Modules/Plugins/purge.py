@@ -4,12 +4,12 @@ from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler, run_async, Filters
 
 from Devil import telethn, dispatcher
-from Devil.helper.validation import (
+from Devil.Handlers.validation import (
     can_delete,
     user_admin,
     
 )
-from Devil.helper.telethon.validations import (
+from Devil.Handlers.telethon.validations import (
     can_delete_messages,
     user_is_admin,   
 )

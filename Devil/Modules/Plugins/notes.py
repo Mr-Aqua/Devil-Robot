@@ -6,11 +6,11 @@ from typing import Optional
 import Devil.Database.notes_sql as sql
 from Devil import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, INSPECTOR
 from Devil.Modules.disable import DisableAbleCommandHandler
-from Devil.helper.managers import MessageHandlerChecker
-from Devil.helper.validation import user_admin, connection_status
-from Devil.helper.misc import build_keyboard, revert_buttons
-from Devil.helper.msg_types import get_note_type
-from Devil.helper.string_handling import (
+from Devil.Handlers.managers import MessageHandlerChecker
+from Devil.Handlers.validation import user_admin, connection_status
+from Devil.Handlers.misc import build_keyboard, revert_buttons
+from Devil.Handlers.msg_types import get_note_type
+from Devil.Handlers.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (

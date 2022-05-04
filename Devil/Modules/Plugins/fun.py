@@ -5,8 +5,8 @@ from Devil.Database.approve_sql import is_approved
 import Devil.Modules.User.fun_strings as fun_strings
 from Devil import dispatcher
 from Devil.Modules.disable import DisableAbleCommandHandler
-from Devil.helper.validation import is_user_admin
-from Devil.helper.extraction import extract_user
+from Devil.Handlers.validation import is_user_admin
+from Devil.Handlers.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async

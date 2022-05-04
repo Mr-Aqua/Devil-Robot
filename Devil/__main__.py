@@ -12,7 +12,7 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import escape_markdown, mention_html
-from Devil.helper.validation import is_user_admin
+from Devil.Handlers.validation import is_user_admin
 
 from telegram.error import (
     BadRequest,
