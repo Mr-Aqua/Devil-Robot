@@ -1,6 +1,6 @@
 from enum import IntEnum, unique
 
-from Devil.helper.string_handling import button_markdown_parser
+from Devil.Functions.string_handling import button_markdown_parser
 from telegram import Message
 
 

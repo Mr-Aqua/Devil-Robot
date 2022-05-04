@@ -1,6 +1,6 @@
 import requests
 from Devil import dispatcher
-from Devil.modules.disable import DisableAbleCommandHandler
+from Devil.Modules.disable import DisableAbleCommandHandler
 from telegram import Update, ParseMode
 from telegram.ext import CallbackContext, run_async
 

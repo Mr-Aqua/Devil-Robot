@@ -1,7 +1,7 @@
 from typing import List, Optional
 
 from Devil import LOGGER
-from Devil.modules.users import get_user_id
+from Devil.Modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 

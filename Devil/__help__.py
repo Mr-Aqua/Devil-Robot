@@ -1,11 +1,11 @@
 import importlib, re
 from Devil import dispatcher, ALLOW_EXCL, LOGGER
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-from Devil.helper.misc import paginate_modules
+from Devil.Functions.misc import paginate_modules
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext
 from telegram.utils.helpers import escape_markdown
-from Devil.helper.validation import is_user_admin
+from Devil.Functions.validation import is_user_admin
 from telegram.ext.dispatcher import DispatcherHandlerStop
 from os.path import isfile
 
@@ -32,7 +32,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 import os
-path =r'Devil/modules/'
+path =r'Devil/Modules/'
 list_of_files = []
 for root, dirs, files in os.walk(path):
     for file in files:
@@ -45,7 +45,7 @@ mod_name = [
     ]
 
 
-path =r'Devil/modules/Admin/'
+path =r'Devil/Modules/Admin/'
 admin_list_of_files = []
 for root, dirs, files in os.walk(path):
     for file in files:
@@ -65,12 +65,12 @@ for module_names in admin_mod_name:
     if admin_imported_module.__mod_name__.lower() not in ADMIN_IMPORTED:
         ADMIN_IMPORTED[admin_imported_module.__mod_name__.lower()] = admin_imported_module
     else:
-        raise Exception("Can't have two modules with the same name! Please change one")
+        raise Exception("Can't have two Modules with the same name! Please change one")
 
     if hasattr(admin_imported_module, "__help__") and admin_imported_module.__help__:
         ADMIN[admin_imported_module.__mod_name__.lower()] = admin_imported_module
 
-path =r'Devil/modules/User/'
+path =r'Devil/Modules/User/'
 user_list_of_files = []
 for root, dirs, files in os.walk(path):
     for file in files:
@@ -90,7 +90,7 @@ for u_module_names in user_mod_name:
     if user_imported_module.__mod_name__.lower() not in USER_IMPORTED:
         USER_IMPORTED[user_imported_module.__mod_name__.lower()] = user_imported_module
     else:
-        raise Exception("Can't have two modules with the same name! Please change one")
+        raise Exception("Can't have two Modules with the same name! Please change one")
 
     if hasattr(user_imported_module, "__help__") and user_imported_module.__help__:
         USER[user_imported_module.__mod_name__.lower()] = user_imported_module
@@ -106,7 +106,7 @@ for module_name in mod_name:
     if imported_module.__mod_name__.lower() not in IMPORTED:
         IMPORTED[imported_module.__mod_name__.lower()] = imported_module
     else:
-        raise Exception("Can't have two modules with the same name! Please change one")
+        raise Exception("Can't have two Modules with the same name! Please change one")
 
     if hasattr(imported_module, "__help__") and imported_module.__help__:
         HELPABLE[imported_module.__mod_name__.lower()] = imported_module

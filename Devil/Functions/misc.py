@@ -19,26 +19,26 @@ class EqInlineKeyboardButton(InlineKeyboardButton):
 
 def paginate_modules(page_n: int, module_dict: Dict, prefix, chat=None) -> List:
     if not chat:
-        modules = sorted(
+        Modules = sorted(
             [EqInlineKeyboardButton(x.__mod_name__,
                                     callback_data="{}_module({})".format(prefix, x.__mod_name__.lower())) for x
              in module_dict.values()])
     else:
-        modules = sorted(
+        Modules = sorted(
             [EqInlineKeyboardButton(x.__mod_name__,
                                     callback_data="{}_module({},{})".format(prefix, chat, x.__mod_name__.lower())) for x
              in module_dict.values()])
 
     pairs = [
-    modules[i * 3:(i + 1) * 3] for i in range((len(modules) + 3 - 1) // 3)
+    Modules[i * 3:(i + 1) * 3] for i in range((len(Modules) + 3 - 1) // 3)
     ]
 
-    round_num = len(modules) / 3
-    calc = len(modules) - round(round_num)
+    round_num = len(Modules) / 3
+    calc = len(Modules) - round(round_num)
     if calc == 1:
-        pairs.append((modules[-1], ))
+        pairs.append((Modules[-1], ))
     elif calc == 2:
-        pairs.append((modules[-1], ))
+        pairs.append((Modules[-1], ))
 
     max_num_pages = ceil(len(pairs) / 10)
     modulo_page = page_n % max_num_pages

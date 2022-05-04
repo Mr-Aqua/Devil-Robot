@@ -1,7 +1,7 @@
 import os
 from time import sleep
 from Devil import OWNER_ID, dispatcher
-from Devil.helper.extraction import extract_user
+from Devil.Functions.extraction import extract_user
 from Devil.Database.users_sql import get_user_com_chats
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized

@@ -4,7 +4,7 @@ from telegram import  Update, ParseMode
 from telegram.ext import run_async ,CallbackContext
 from gpytranslate import SyncTranslator
 from Devil import dispatcher
-from Devil.modules.disable import DisableAbleCommandHandler
+from Devil.Modules.disable import DisableAbleCommandHandler
 trans = SyncTranslator()
  
 def totranslate(update: Update, context: CallbackContext) -> None:

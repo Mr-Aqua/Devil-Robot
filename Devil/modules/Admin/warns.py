@@ -4,23 +4,23 @@ from typing import Optional
 
 import telegram
 from Devil import INSPECTOR, ENFORCER, dispatcher
-from Devil.modules.disable import DisableAbleCommandHandler
-from Devil.helper.validation import (
+from Devil.Modules.disable import DisableAbleCommandHandler
+from Devil.Functions.validation import (
     bot_admin,
     can_restrict,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from Devil.helper.extraction import (
+from Devil.Functions.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from Devil.helper.filters import CustomFilters
-from Devil.helper.misc import split_message
-from Devil.helper.string_handling import split_quotes
-from Devil.modules.Admin.log_channel import loggable
+from Devil.Functions.filters import CustomFilters
+from Devil.Functions.misc import split_message
+from Devil.Functions.string_handling import split_quotes
+from Devil.Modules.Admin.log_channel import loggable
 from Devil.Database import warns_sql as sql
 from telegram import (
     CallbackQuery,

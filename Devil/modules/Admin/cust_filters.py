@@ -16,14 +16,14 @@ from telegram.ext import (
 from telegram.utils.helpers import mention_html, escape_markdown
 
 from Devil import dispatcher, LOGGER, INSPECTOR
-from Devil.modules.disable import DisableAbleCommandHandler
-from Devil.helper.managers import MessageHandlerChecker
-from Devil.helper.validation import user_admin
-from Devil.helper.extraction import extract_text
-from Devil.helper.filters import CustomFilters
-from Devil.helper.misc import build_keyboard_parser
-from Devil.helper.msg_types import get_filter_type
-from Devil.helper.string_handling import (
+from Devil.Modules.disable import DisableAbleCommandHandler
+from Devil.Functions.managers import MessageHandlerChecker
+from Devil.Functions.validation import user_admin
+from Devil.Functions.extraction import extract_text
+from Devil.Functions.filters import CustomFilters
+from Devil.Functions.misc import build_keyboard_parser
+from Devil.Functions.msg_types import get_filter_type
+from Devil.Functions.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
@@ -31,9 +31,9 @@ from Devil.helper.string_handling import (
 )
 from Devil.Database import cust_filters_sql as sql
 
-from Devil.modules.Admin.connection import connected
+from Devil.Modules.Admin.connection import connected
 
-from Devil.helper.alternate import send_message, typing_action
+from Devil.Functions.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 

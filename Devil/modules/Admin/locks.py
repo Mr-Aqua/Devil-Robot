@@ -11,18 +11,18 @@ from alphabet_detector import AlphabetDetector
 
 import Devil.Database.locks_sql as sql
 from Devil import dispatcher, INSPECTOR, LOGGER
-from Devil.modules.disable import DisableAbleCommandHandler
-from Devil.helper.validation import (
+from Devil.Modules.disable import DisableAbleCommandHandler
+from Devil.Functions.validation import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from Devil.modules.Admin.log_channel import loggable
-from Devil.modules.Admin.connection import connected
+from Devil.Modules.Admin.log_channel import loggable
+from Devil.Modules.Admin.connection import connected
 from Devil.Database.approve_sql import is_approved
-from Devil.helper.alternate import send_message, typing_action
+from Devil.Functions.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 

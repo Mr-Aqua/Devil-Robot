@@ -3,8 +3,8 @@ from typing import Union
 
 from future.utils import string_types
 from Devil import dispatcher
-from Devil.helper.managers import CMD_STARTERS, SpamChecker
-from Devil.helper.misc import is_module_loaded
+from Devil.Functions.managers import CMD_STARTERS, SpamChecker
+from Devil.Functions.misc import is_module_loaded
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
@@ -20,7 +20,7 @@ FILENAME = __name__.rsplit(".", 1)[-1]
 # If module is due to be loaded, then setup all the magical handlers
 if is_module_loaded(FILENAME):
 
-    from Devil.helper.validation import (
+    from Devil.Functions.validation import (
         connection_status,
         is_user_admin,
         user_admin,
@@ -160,7 +160,7 @@ if is_module_loaded(FILENAME):
         args = context.args
         chat = update.effective_chat
         if len(args) >= 1:
-            disable_module = "DevilRobot.modules." + args[0].rsplit(".", 1)[0]
+            disable_module = "DevilRobot.Modules." + args[0].rsplit(".", 1)[0]
 
             try:
                 module = importlib.import_module(disable_module)
@@ -235,7 +235,7 @@ if is_module_loaded(FILENAME):
         chat = update.effective_chat
 
         if len(args) >= 1:
-            enable_module = "DevilRobot.modules." + args[0].rsplit(".", 1)[0]
+            enable_module = "DevilRobot.Modules." + args[0].rsplit(".", 1)[0]
 
             try:
                 module = importlib.import_module(enable_module)

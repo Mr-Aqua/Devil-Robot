@@ -32,12 +32,12 @@
        "value": ""
     },
     "API_ID": {
-       "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
+       "description": "Get API_ID from my.telegram.org, used for telethon based Modules.",
        "required": true,
        "value": "3160248"
     },
     "API_HASH": {
-       "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+       "description": "Get API_HASH from my.telegram.org, used for telethon based Modules.",
        "required": true,
        "value": "da866bcad3446898c4d4a20fa10b9d09"
     },    
@@ -106,7 +106,7 @@
        "value": ""
     },
     "No_LOAD": {
-       "description": "Dont load these modules cause they shit, space separation",
+       "description": "Dont load these Modules cause they shit, space separation",
        "required": false,
        "value": "rss"
     }, 

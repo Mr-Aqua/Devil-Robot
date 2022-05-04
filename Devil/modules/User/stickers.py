@@ -17,7 +17,7 @@ from telegram.ext import run_async, CallbackContext, CallbackQueryHandler
 from telegram.utils.helpers import mention_html
 
 from Devil import dispatcher
-from Devil.modules.disable import DisableAbleCommandHandler
+from Devil.Modules.disable import DisableAbleCommandHandler
 
 REDIS = ""
 combot_stickers_url = "https://combot.org/telegram/stickers?q="

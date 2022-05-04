@@ -423,6 +423,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from Devil.modules.Admin import connection
+from Devil.Modules.Admin import connection
 
 connected = connection.connected

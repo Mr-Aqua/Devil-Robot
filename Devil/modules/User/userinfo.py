@@ -20,12 +20,12 @@ from Devil import (
 )
 from Devil.__help__ import STATS, USER_INFO
 import Devil.Database.userinfo_sql as sql
-from Devil.modules.disable import DisableAbleCommandHandler
+from Devil.Modules.disable import DisableAbleCommandHandler
 from Devil.Database.global_bans_sql import is_user_gbanned
 from Devil.Database.afk_sql import is_afk, check_afk_status
 from Devil.Database.users_sql import get_user_num_chats
-from Devil.helper.validation import sudo_plus, user_admin, support_plus
-from Devil.helper.extraction import extract_user
+from Devil.Functions.validation import sudo_plus, user_admin, support_plus
+from Devil.Functions.extraction import extract_user
 
 def no_by_per(totalhp, percentage):
     """

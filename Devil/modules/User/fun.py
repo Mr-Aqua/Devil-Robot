@@ -2,11 +2,11 @@ import html
 import random
 import time
 from Devil.Database.approve_sql import is_approved
-import Devil.modules.User.fun_strings as fun_strings
+import Devil.Modules.User.fun_strings as fun_strings
 from Devil import dispatcher
-from Devil.modules.disable import DisableAbleCommandHandler
-from Devil.helper.validation import is_user_admin
-from Devil.helper.extraction import extract_user
+from Devil.Modules.disable import DisableAbleCommandHandler
+from Devil.Functions.validation import is_user_admin
+from Devil.Functions.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async

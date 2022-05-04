@@ -12,7 +12,7 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import escape_markdown, mention_html
-from Devil.helper.validation import is_user_admin
+from Devil.Functions.validation import is_user_admin
 
 from telegram.error import (
     BadRequest,
@@ -35,7 +35,7 @@ from Devil import (
     telethn,
     updater)
 
-from Devil.modules import ALL_MODULES
+from Devil.Modules import ALL_MODULES
 from Devil.__help__ import (
 get_help, 
 help_button, 
@@ -324,6 +324,6 @@ def main():
 
 
 if __name__ == "__main__":
-    LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
+    LOGGER.info("Successfully loaded Modules: " + str(ALL_MODULES))
     telethn.start(bot_token=TOKEN)
     main()

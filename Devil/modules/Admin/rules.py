@@ -2,8 +2,8 @@ from typing import Optional
 
 import Devil.Database.rules_sql as sql
 from Devil import dispatcher
-from Devil.helper.validation import user_admin, connection_status
-from Devil.helper.string_handling import markdown_parser
+from Devil.Functions.validation import user_admin, connection_status
+from Devil.Functions.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
