@@ -2,7 +2,7 @@ import html
 import random
 import time
 from Devil.Database.approve_sql import is_approved
-import Devil.Modules.User.fun_strings as fun_strings
+import Devil.Modules..fun_strings as fun_strings
 from Devil import dispatcher
 from Devil.Modules.disable import DisableAbleCommandHandler
 from Devil.Handlers.validation import is_user_admin
