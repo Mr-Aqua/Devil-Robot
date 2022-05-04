@@ -3,6 +3,8 @@ import telegram.ext as tg
 from telethon.sessions import MemorySession
 from telethon import TelegramClient
 from Python_ARQ import ARQ
+import aiohttp
+from aiohttp import ClientSession
 
 StartTime = time.time()
 
@@ -96,11 +98,16 @@ else:
 
     SUPPORT_CHAT = Config.SUPPORT_CHAT
 
+#install aiohttp session
+print("[INFO]: INITIALZING AIOHTTP SESSION")
+aiohttpsession = ClientSession()
+
 # ARQ Client
 print("[INFO]: INITIALIZING ARQ CLIENT")
 ARQ_API_KEY = "Arq Api"
 ARQ_API_URL = "https://arq.hamker.in"
-
+arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
+loop = asyncio.get_event_loop()
 
 # WEBHOOK REQUERED THINGS
     WORKERS = Config.WORKERS
@@ -116,9 +123,7 @@ telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
 dispatcher = updater.dispatcher
 
 
-#install aiohttp session
-print("[Devil]: Scanning AIO http session")
-aiohttpsession = ClientSession() 
+
 
 
 async def get_entity(client, entity):
