@@ -1,6 +1,6 @@
 import requests
 from Devil import dispatcher
-from Devil.Modules.disable import DisableAbleCommandHandler
+from Devil.modules.disable import DisableAbleCommandHandler
 from telegram import Update, ParseMode
 from telegram.ext import CallbackContext, run_async
 
@@ -56,5 +56,5 @@ def github(update: Update, context: CallbackContext):
     message.reply_photo(photo=avatar_url, caption=caption, parse_mode=ParseMode.MARKDOWN)
 
 
-GIT_HANDLER = DisableAbleCommandHandler("github", "git", github, run_async=True)
+GIT_HANDLER = DisableAbleCommandHandler("github", github, run_async=True)
 dispatcher.add_handler(GIT_HANDLER)

@@ -5,13 +5,13 @@ import re
 from telegram import Message, Chat, Update, User, ChatPermissions
 
 from Devil import INSPECTOR, ENFORCER, dispatcher
-from Devil.Functions.validation import (
+from Devil.helper.validation import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from Devil.Modules.Admin.log_channel import loggable
+from Devil.modules.Admin.log_channel import loggable
 from Devil.Database import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
@@ -23,9 +23,9 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html
-from Devil.Functions.string_handling import extract_time
-from Devil.Modules.Admin.connection import connected
-from Devil.Functions.alternate import send_message
+from Devil.helper.string_handling import extract_time
+from Devil.modules.Admin.connection import connected
+from Devil.helper.alternate import send_message
 from Devil.Database.approve_sql import is_approved
 
 FLOOD_GROUP = 3

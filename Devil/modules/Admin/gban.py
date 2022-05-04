@@ -26,16 +26,16 @@ from Devil import (
     ENFORCER,
     dispatcher,
 )
-from Devil.Functions.validation import (
+from Devil.helper.validation import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from Devil.Functions.extraction import (
+from Devil.helper.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Devil.Functions.misc import send_to_list
+from Devil.helper.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 STRICT_GBAN = True

@@ -8,8 +8,8 @@ from telegram import ChatAction
 from telegram.ext import run_async
 
 from Devil import dispatcher
-from Devil.Modules.disable import DisableAbleCommandHandler
-from Devil.Functions.alternate import typing_action, send_action
+from Devil.modules.disable import DisableAbleCommandHandler
+from Devil.helper.alternate import typing_action, send_action
 
 @send_action(ChatAction.RECORD_AUDIO)
 def gtts(update, context):

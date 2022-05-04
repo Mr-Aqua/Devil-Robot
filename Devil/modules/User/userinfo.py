@@ -20,12 +20,12 @@ from Devil import (
 )
 from Devil.__help__ import STATS, USER_INFO
 import Devil.Database.userinfo_sql as sql
-from Devil.Modules.disable import DisableAbleCommandHandler
+from Devil.modules.disable import DisableAbleCommandHandler
 from Devil.Database.global_bans_sql import is_user_gbanned
 from Devil.Database.afk_sql import is_afk, check_afk_status
 from Devil.Database.users_sql import get_user_num_chats
-from Devil.Functions.validation import sudo_plus, user_admin, support_plus
-from Devil.Functions.extraction import extract_user
+from Devil.helper.validation import sudo_plus, user_admin, support_plus
+from Devil.helper.extraction import extract_user
 
 def no_by_per(totalhp, percentage):
     """
@@ -306,7 +306,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/Devil_News">?</a>]'.format(
+        text += ' [<a href="https://t.me/Devil_Updates">?</a>]'.format(
             bot.username
         )
 
@@ -563,7 +563,7 @@ Examples:
  ‣ `/ginfo`*:* get information about a Group. 
  
 *What is that health thingy?*
- Come and see [HP System explained](https://t.me/Devil_News)
+ Come and see [HP System explained](https://t.me/Devil_Updates)
 """
 __mod_name__ = "Infos"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]

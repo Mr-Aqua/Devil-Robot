@@ -8,12 +8,12 @@ from Devil import (
     ENFORCER,
     dispatcher,
 )
-from Devil.Functions.validation import dev_plus
-from Devil.Functions.extraction import (
+from Devil.helper.validation import dev_plus
+from Devil.helper.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Devil.Modules.Admin.log_channel import gloggable
+from Devil.modules.Admin.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async

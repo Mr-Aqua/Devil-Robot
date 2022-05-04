@@ -2,7 +2,7 @@ import random
 import threading
 from typing import Union
 
-from Devil.Functions.msg_types import Types
+from Devil.helper.msg_types import Types
 from Devil.Database import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText
 

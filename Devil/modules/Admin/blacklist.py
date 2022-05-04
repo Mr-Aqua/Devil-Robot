@@ -8,16 +8,16 @@ from telegram.utils.helpers import mention_html
 
 import Devil.Database.blacklist_sql as sql
 from Devil import dispatcher, LOGGER
-from Devil.Modules.disable import DisableAbleCommandHandler
-from Devil.Functions.validation import user_admin, user_not_admin
-from Devil.Functions.extraction import extract_text
-from Devil.Functions.misc import split_message
-from Devil.Modules.Admin.log_channel import loggable
-from Devil.Modules.Admin.warns import warn
-from Devil.Functions.string_handling import extract_time
-from Devil.Modules.Admin.connection import connected
+from Devil.modules.disable import DisableAbleCommandHandler
+from Devil.helper.validation import user_admin, user_not_admin
+from Devil.helper.extraction import extract_text
+from Devil.helper.misc import split_message
+from Devil.modules.Admin.log_channel import loggable
+from Devil.modules.Admin.warns import warn
+from Devil.helper.string_handling import extract_time
+from Devil.modules.Admin.connection import connected
 from Devil.Database.approve_sql import is_approved
-from Devil.Functions.alternate import send_message, typing_action
+from Devil.helper.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 

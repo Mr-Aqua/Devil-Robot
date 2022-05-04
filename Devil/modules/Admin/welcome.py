@@ -12,18 +12,18 @@ from Devil import (
     ENFORCER, DEV_USERS, INSPECTOR, JOIN_LOGGER, LOGGER,
     OWNER_ID, dispatcher
 )
-from Devil.Functions.validation import (
+from Devil.helper.validation import (
     is_user_ban_protected, user_admin, connection_status,
 )
-from Devil.Functions.misc import (
+from Devil.helper.misc import (
     build_keyboard,
     revert_buttons,
 )
-from Devil.Functions.msg_types import get_welcome_type
-from Devil.Functions.string_handling import (
+from Devil.helper.msg_types import get_welcome_type
+from Devil.helper.string_handling import (
     escape_invalid_curly_brackets, markdown_parser,
 )
-from Devil.Modules.Admin.log_channel import loggable
+from Devil.modules.Admin.log_channel import loggable
 from Devil.Database.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions, InlineKeyboardButton,

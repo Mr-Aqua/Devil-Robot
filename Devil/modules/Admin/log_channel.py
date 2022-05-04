@@ -3,7 +3,7 @@ from functools import wraps
 
 from telegram.ext import CallbackContext
 
-from Devil.Functions.misc import is_module_loaded
+from Devil.helper.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -14,7 +14,7 @@ if is_module_loaded(FILENAME):
     from telegram.utils.helpers import escape_markdown
 
     from Devil import EVENT_LOGS, LOGGER, dispatcher
-    from Devil.Functions.validation import user_admin
+    from Devil.helper.validation import user_admin
     from Devil.Database import log_channel_sql as sql
 
     def loggable(func):

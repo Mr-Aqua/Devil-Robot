@@ -1,11 +1,11 @@
 import html
-from Devil.Modules.disable import DisableAbleCommandHandler
+from Devil.modules.disable import DisableAbleCommandHandler
 from Devil import dispatcher, INSPECTOR
-from Devil.Functions.extraction import extract_user
+from Devil.helper.extraction import extract_user
 from telegram.ext import CallbackContext, run_async, CallbackQueryHandler
 import Devil.Database.approve_sql as sql
-from Devil.Functions.validation import user_admin
-from Devil.Modules.Admin.log_channel import loggable
+from Devil.helper.validation import user_admin
+from Devil.modules.Admin.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest

@@ -13,7 +13,7 @@ from telegram.ext import (
 
 import Devil.Database.users_sql as sql
 from Devil import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from Devil.Functions.validation import dev_plus, sudo_plus
+from Devil.helper.validation import dev_plus, sudo_plus
 from Devil.Database.users_sql import get_all_users
 
 USERS_GROUP = 4

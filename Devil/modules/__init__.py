@@ -10,13 +10,13 @@ def __list_all_modules():
     import glob
     from os.path import basename, dirname, isfile
     import os
-    path =r'./Devil/Modules/'
+    path =r'./Devil/modules/'
     list_of_files = []
 
     for root, dirs, files in os.walk(path):
         for file in files:
             list_of_files.append(os.path.join(root,file))
-# This generates a list of Modules in this folder for the * in __help__ to work.
+# This generates a list of modules in this folder for the * in __help__ to work.
 
     all_modules = [
         basename(name)[:-3]

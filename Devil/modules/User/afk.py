@@ -4,12 +4,12 @@ from datetime import datetime
 import humanize
 
 from Devil import dispatcher
-from Devil.Modules.disable import (
+from Devil.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
 from Devil.Database import afk_sql as sql, disable_sql
-from Devil.Modules.users import get_user_id
+from Devil.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
