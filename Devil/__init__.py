@@ -75,6 +75,9 @@ if ENV:
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", True))
     INFOPIC = bool(os.environ.get("INFOPIC", True))
 
+SUDO_USERS.add(OWNER_ID)
+DEV_USERS.add(OWNER_ID)
+
 
 
 
@@ -93,6 +96,12 @@ else:
 
     SUPPORT_CHAT = Config.SUPPORT_CHAT
 
+# ARQ Client
+print("[INFO]: INITIALIZING ARQ CLIENT")
+ARQ_API_KEY = "Arq Api"
+ARQ_API_URL = "https://arq.hamker.in"
+
+
 # WEBHOOK REQUERED THINGS
     WORKERS = Config.WORKERS
     ALLOW_EXCL = Config.ALLOW_EXCL
@@ -107,4 +116,57 @@ telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
 dispatcher = updater.dispatcher
 
 
+#install aiohttp session
+print("[Devil]: Scanning AIO http session")
+aiohttpsession = ClientSession() 
 
+
+async def get_entity(client, entity):
+    entity_client = client
+    if not isinstance(entity, Chat):
+        try:
+            entity = int(entity)
+        except ValueError:
+            pass
+        except TypeError:
+            entity = entity.id
+        try:
+            entity = await client.get_chat(entity)
+        except (PeerIdInvalid, ChannelInvalid):
+            for kp in apps:
+                if kp != client:
+                    try:
+                        entity = await kp.get_chat(entity)
+                    except (PeerIdInvalid, ChannelInvalid):
+                        pass
+                    else:
+                        entity_client = kp
+                        break
+            else:
+                entity = await kp.get_chat(entity)
+                entity_client = kp
+    return entity, entity_client
+
+
+async def eor(msg: Message, **kwargs):
+    func = msg.edit_text if msg.from_user.is_self else msg.reply
+    spec = getfullargspec(func.__wrapped__).args
+    return await func(**{k: v for k, v in kwargs.items() if k in spec})
+
+
+INSPECTOR = list(INSPECTOR) + list(DEV_USERS)
+DEV_USERS = list(DEV_USERS)
+ENFORCER = list(ENFORCER)
+
+
+# Load at end to ensure all prev variables have been set
+from Devil.Handlers.handlers import (
+    CustomCommandHandler,
+    CustomMessageHandler,
+    CustomRegexHandler,
+)
+
+# make sure the regex handler can take extra kwargs
+tg.RegexHandler = CustomRegexHandler
+tg.CommandHandler = CustomCommandHandler
+tg.MessageHandler = CustomMessageHandler
