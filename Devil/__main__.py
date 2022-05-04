@@ -237,7 +237,7 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             stringz = "My dear Owner , I'm Working Again. Thanks to make me live."
-            dispatcher.bot.sendMessage(f"@{OWNER_ID}", stringz)
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", stringz)
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
