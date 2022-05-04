@@ -28,7 +28,7 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'Automated code formatting.'
-          commit_options: '--no-verify'
+          commit_options: '--no-verify --signoff'
           repository: .
           commit_user_name: Luvly-King
           commit_user_email: Luvly-King@users.noreply.github.com
