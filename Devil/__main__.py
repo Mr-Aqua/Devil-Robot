@@ -224,7 +224,7 @@ def Devil_about_callback(update: Update, context: CallbackContext):
                 [
                    [
                      InlineKeyboardButton(text="Support", url="t.me/Devil_Support"),
-                     InlineKeyboardButton(text="News", url="t.me/Devil_Updates"),
+                     InlineKeyboardButton(text="News", url="t.me/Devil_News"),
                    ],
                    [
                     InlineKeyboardButton(text="Back", callback_data="Devil_back")
