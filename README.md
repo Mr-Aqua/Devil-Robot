@@ -1,11 +1,11 @@
 <p align="center">
-    <a href="https://github.com/Luvly-King/DevilRobot/stargazers"><img src="https://img.shields.io/github/stars/Luvly-King/DevilRobot?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
+    <a href="https://github.com/Luvly-King/Devil-Robot/stargazers"><img src="https://img.shields.io/github/stars/Luvly-King/Devil-Robot?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
 </p>
 <p align="center">
-    <a href="https://github.com/Luvly-King/DevilRobot"> <img src="https://img.shields.io/github/repo-size/Luvly-King/DevilRobot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Luvly-King/DevilRobot/commits/prince"> <img src="https://img.shields.io/github/last-commit/Luvly-King/DevilRobot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Luvly-King/DevilRobot/issues"> <img src="https://img.shields.io/github/issues/Luvly-King/DevilRobot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Luvly-King/DevilRobot/network/members"> <img src="https://img.shields.io/github/forks/Luvly-King/DevilRobot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
+    <a href="https://github.com/Luvly-King/Devil-Robot"> <img src="https://img.shields.io/github/repo-size/Luvly-King/Devil-Robot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Luvly-King/Devil-Robot/commits/prince"> <img src="https://img.shields.io/github/last-commit/Luvly-King/Devil-Robot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Luvly-King/Devil-Robot/issues"> <img src="https://img.shields.io/github/issues/Luvly-King/Devil-Robot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Luvly-King/Devil-Robot/network/members"> <img src="https://img.shields.io/github/forks/Luvly-King/Devil-Robot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
 
@@ -13,7 +13,7 @@
   <img src="https://telegra.ph/file/714ba5fe8584db7e80d16.jpg">
 </p>
 
-# DevilRobot
+# Devil-Robot
 Me On Telegram [✨Devil✨](https://t.me/DEVIL_GROUP_BOT)
 
 ## How To Host
