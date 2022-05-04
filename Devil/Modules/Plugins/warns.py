@@ -20,7 +20,7 @@ from Devil.Handlers.extraction import (
 from Devil.Handlers.filters import CustomFilters
 from Devil.Handlers.misc import split_message
 from Devil.Handlers.string_handling import split_quotes
-from Devil.Modules.Admin.log_channel import loggable
+from Devil.Modules.Plugins.log_channel import loggable
 from Devil.Database import warns_sql as sql
 from telegram import (
     CallbackQuery,

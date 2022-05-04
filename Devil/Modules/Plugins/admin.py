@@ -21,7 +21,7 @@ from Devil.Handlers.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Devil.Modules.Admin.log_channel import loggable
+from Devil.Modules.Plugins.log_channel import loggable
 from Devil.Handlers.alternate import send_message, typing_action
 
 
