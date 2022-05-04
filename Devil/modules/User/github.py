@@ -56,5 +56,5 @@ def github(update: Update, context: CallbackContext):
     message.reply_photo(photo=avatar_url, caption=caption, parse_mode=ParseMode.MARKDOWN)
 
 
-GIT_HANDLER = DisableAbleCommandHandler("github", github, run_async=True)
+GIT_HANDLER = DisableAbleCommandHandler("github", "git", github, run_async=True)
 dispatcher.add_handler(GIT_HANDLER)

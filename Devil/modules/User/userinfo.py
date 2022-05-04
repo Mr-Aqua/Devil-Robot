@@ -306,7 +306,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/Devil_Updates">?</a>]'.format(
+        text += ' [<a href="https://t.me/Devil_News">?</a>]'.format(
             bot.username
         )
 
@@ -563,7 +563,7 @@ Examples:
  ‣ `/ginfo`*:* get information about a Group. 
  
 *What is that health thingy?*
- Come and see [HP System explained](https://t.me/Devil_Updates)
+ Come and see [HP System explained](https://t.me/Devil_News)
 """
 __mod_name__ = "Infos"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
